@@ -13,3 +13,6 @@ print(train.iloc[3,:])
 print(train.iloc[4,:3])
 print(train.iloc[:,2])
 print(train.loc[:,['Pclass','Age']])
+#Suggestion to my self is stick to loc and iloc to refer to specific column and rows.
+print(train.loc[:,['PassengerId','Survived']])
+
