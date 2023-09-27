@@ -19,3 +19,4 @@ print(train.loc[:,['PassengerId','Survived']])
 # One approach is to create a sub data frame and run describe on it. Infact without creating a variable. 
 print((train.loc[:,['PassengerId','Survived']]).describe())
 #testing out the fetch git command.
+#tested successfully.
