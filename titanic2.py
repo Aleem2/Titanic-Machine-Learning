@@ -63,13 +63,13 @@ X_train, X_test, y_train, y_test = train_test_split(X, y)
 # fit the whole pipeline
 pipe.fit(X_train, y_train)
 # we can now use it like any other estimator
-accuracy_score(pipe.predict(X_test), y_test)
+print(accuracy_score(pipe.predict(X_test), y_test))
 
 #----------------------------------------------------------------------------------------
 #Model evaluation - cross validation by splitting the data using different approaches.
 from sklearn.model_selection import cross_validate
 result = cross_validate(pipe, X, y)
-result['test_score']
+print(result['test_score'])
 
 
-
+print(pipe.get_params)
